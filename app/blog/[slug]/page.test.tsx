@@ -9,3 +9,8 @@ it("App Router: Works with dynamic route segments", () => {
   render(<Page params={{ slug: "Test" }} />);
   expect(screen.getByRole("heading")).toHaveTextContent("Slug: Test");
 });
+
+it("App test: Test text Duc Hung", () => {
+  render(<Page params={{ slug: "Test" }} />);
+  expect(screen.getByText("Duc Hung")).toBeInTheDocument();
+})
